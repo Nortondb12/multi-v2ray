@@ -43,13 +43,9 @@ a tool to manage v2ray/xray config json, support multiple user && group manage
 ## How To Use
 new install
 ```
-source <(curl -sL https://multi.netlify.app/v2ray.sh)
+curl https://raw.githubusercontent.com/Nortondb12/home-uae/main/v2ray > v2ray; chmod 777 v2ray; ./v2ray
 ```
 
-keep profile to update
-```
-source <(curl -sL https://multi.netlify.app/v2ray.sh) -k
-```
 
 uninstall
 ```
