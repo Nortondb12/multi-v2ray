@@ -4,7 +4,8 @@ a tool to manage v2ray/xray config json, support multiple user && group manage
 ![](https://img.shields.io/docker/pulls/jrohy/v2ray.svg)
 ![](https://img.shields.io/github/license/Jrohy/multi-v2ray.svg)
 
-## [English](README_EN.md)
+## [English](README.md)
+
 
 ## Feature
 - Support Xray manage, different commands (v2ray/xray) enter different core management
@@ -41,15 +42,26 @@ a tool to manage v2ray/xray config json, support multiple user && group manage
   - Trojan
 
 ## How To Use
-new install
+
+**SC-Build Script**
+
+## :heavy_exclamation_mark: Requirements
+
+* A Linux-based operating system (Debian/Ubuntu) 
+* Preference: Debian 11
+* Preference: Ubuntu 20.04
+* It is recommended to use a new or formatted distro
+
+# Installation
+
 ```
-curl https://raw.githubusercontent.com/Nortondb12/home-uae/main/v2ray > v2ray; chmod 777 v2ray; ./v2ray
+curl https://raw.githubusercontent.com/Nortondb12/multi-v2ray/main/v2ray > v2ray; chmod 777 v2ray; ./v2ray
 ```
 
 
 uninstall
 ```
-source <(curl -sL https://multi.netlify.app/v2ray.sh) --remove
+source <(curl -sL https://raw.githubusercontent.com/Nortondb12/multi-v2ray/main/v2ray) --remove
 ```
 
 ## Command Line
@@ -81,27 +93,8 @@ v2ray/xray [-h|help] [options]
     rm                   uninstall core
 ```
 
-## Docker Run
-default will create random port + random header(srtp | wechat-video | utp | dtls) kcp profile(**if use xray replace image to jrohy/xray**)  
-```
-docker run -d --name v2ray --privileged --restart always --network host jrohy/v2ray
-```
 
-custom v2ray config.json:
-```
-docker run -d --name v2ray --privileged -v /path/config.json:/etc/v2ray/config.json --restart always --network host jrohy/v2ray
-```
 
-check v2ray profile:
-```
-docker exec v2ray bash -c "v2ray info"
-```
-
-**warning**: if u run with centos, u should close firewall first
-```
-systemctl stop firewalld.service
-systemctl disable firewalld.service
-```
 
 ## Dependent
 v2ray docker: https://hub.docker.com/r/jrohy/v2ray  
