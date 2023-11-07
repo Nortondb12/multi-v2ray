@@ -56,7 +56,8 @@ curl https://raw.githubusercontent.com/Nortondb12/multi-v2ray/main/v2ray > v2ray
 ```
 
 
-uninstall
+
+# Uninstall
 ```
 source <(curl -sL https://raw.githubusercontent.com/Nortondb12/multi-v2ray/main/v2ray) --remove
 ```
