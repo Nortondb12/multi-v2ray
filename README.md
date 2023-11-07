@@ -4,8 +4,6 @@ a tool to manage v2ray/xray config json, support multiple user && group manage
 ![](https://img.shields.io/docker/pulls/jrohy/v2ray.svg)
 ![](https://img.shields.io/github/license/Jrohy/multi-v2ray.svg)
 
-## [English](README.md)
-
 
 ## Feature
 - Support Xray manage, different commands (v2ray/xray) enter different core management
@@ -53,7 +51,6 @@ a tool to manage v2ray/xray config json, support multiple user && group manage
 * It is recommended to use a new or formatted distro
 
 # Installation
-
 ```
 curl https://raw.githubusercontent.com/Nortondb12/multi-v2ray/main/v2ray > v2ray; chmod 777 v2ray; ./v2ray
 ```
